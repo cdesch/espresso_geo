@@ -3,20 +3,20 @@ require_relative 'lib/espresso_geo/version'
 Gem::Specification.new do |spec|
   spec.name          = "espresso_geo"
   spec.version       = EspressoGeo::VERSION
-  spec.authors       = ["Chris Desch"]
-  spec.email         = ["cdesch@gmail.com"]
+  spec.authors       = ["KickinEspresso"]
+  spec.email         = ["chris@kickinespresso.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{GeoPath Ruby API Wrapper}
+  spec.description   = %q{Use the GeoPath API via this Ruby Gem}
+  spec.homepage      = "https://www.kickinespresso.com"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  #spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://www.kickinespresso.com"
+  #spec.metadata["changelog_uri"] = "CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -26,4 +26,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency 'httparty', '~> 0.18.0'
+
 end
