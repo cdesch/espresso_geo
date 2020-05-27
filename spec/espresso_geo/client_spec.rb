@@ -1,7 +1,5 @@
 require 'espresso_geo'
 
-
-
 RSpec.describe EspressoGeo::Client do
 
   let(:client) { EspressoGeo::Client.new(RSpec.configuration.consumer_key, RSpec.configuration.consumer_secret) }

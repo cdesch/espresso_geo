@@ -16,5 +16,4 @@ RSpec.configure do |config|
   config.add_setting :consumer_secret
   config.consumer_key = ENV['CONSUMER_KEY']
   config.consumer_secret = ENV['CONSUMER_SECRET']
-    #config.before(:consumer_secret) { @concept0 = 'value' }
 end

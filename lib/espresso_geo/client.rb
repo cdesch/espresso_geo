@@ -1,14 +1,17 @@
+# frozen_string_literal: true
+
 require 'logger'
 require 'httparty'
 require 'json'
 
-
 class EspressoGeo::Client
   include HTTParty
-  base_uri 'https://api.geopath.org/v2.1'
+  #base_uri EspressoGeo.configuration.base_url
   #debug_output
 
-  def initialize(consumer_key, consumer_secret)
+  def initialize(consumer_key = EspressoGeo.configuration.consumer_key, consumer_secret = EspressoGeo.configuration.consumer_secret)
+    self.class.base_uri EspressoGeo.configuration.base_url
+
     @consumer_key = consumer_key
     @consumer_secret = consumer_secret
     @auth = { "Geopath-API-Key": @consumer_key}
@@ -24,7 +27,6 @@ class EspressoGeo::Client
 
   #self.class.get("/statuses/#{which}_timeline.json", options)
   def media_types
-    #options.merge!({ basic_auth: @auth })
     self.class.get("/inventory/media_types", @options)
   end
 
