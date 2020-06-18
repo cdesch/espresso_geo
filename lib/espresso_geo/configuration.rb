@@ -7,8 +7,6 @@ module EspressoGeo
     attr_accessor :consumer_key, :consumer_secret, :base_url
 
     def initialize
-      # @consumer_key = ENV['CONSUMER_KEY'] || nil
-      # @consumer_secret = ENV['CONSUMER_SECRET'] || nil
       @consumer_key = nil
       @consumer_secret = nil
       @base_url = 'https://api.geopath.org/v2.1'

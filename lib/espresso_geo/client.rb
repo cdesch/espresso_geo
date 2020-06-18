@@ -78,6 +78,7 @@ class EspressoGeo::Client
   end
 
   #/v2.1/markets/ZIP30678
+  # market("ZIP30678")
   def market(id)
     self.class.get("/markets/#{id}", @options)
   end
@@ -101,7 +102,7 @@ class EspressoGeo::Client
   #         ""
   #     ]
   # }
-  def segment_search(params = {}, opts = { page: 1, page_size: 100})
+  def segment_search(params = {}, opts = { page: 1, page_size: 100 })
     options = @options
     options[:query] = params.merge(opts)
     self.class.get('/segments/search', options)
@@ -112,30 +113,36 @@ class EspressoGeo::Client
   end
 
   def operators
-
   end
 
   # inventory
   # /inventory/search
-  def inventory_search(params = {}, opts = { page: 1, page_size: 1000})
+  def inventory_search(params = {}, opts = { page: 1, page_size: 1000, period_days: 28 })
     options = { body: params.merge(opts).to_json, headers: @auth2}
     self.class.post('/inventory/search', options)
   end
 
   # /inventory/search/summary
-  def inventory_search_summary(params = {}, opts = { page: 1, page_size: 1000})
+  def inventory_search_summary(params = {}, opts = { page: 1, page_size: 1000, period_days: 28 })
     options = { body: params.merge(opts).to_json, headers: @auth2}
     self.class.post('/inventory/search/summary', options)
   end
 
   #geo_path_api.frame(30832275)
-  def frame(id)
-    self.class.get("/inventory/#{id}", @options)
+  def frame(id, opts = { period_days: 28 })
+    options = @options
+    options[:query] = opts
+    self.class.get("/inventory/#{id}", options)
   end
 
   def spot(id, params = {})
     options = @options
     options[:query] = params
     self.class.get("/inventory/spot/#{id}", options)
+  end
+
+  def spot_search(params = {}, opts = { page: 1, page_size: 1000, period_days: 28 })
+    options = { body: params.merge(opts).to_json, headers: @auth2}
+    self.class.post('/inventory/spot/id/search', options)
   end
 end
