@@ -12,7 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b70b86f5-1581-464f-92ae-a456a1ce1edd" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/espresso_geo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/espresso_geo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/espresso_geo/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/espresso_geo/client.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +46,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -195,6 +198,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -213,6 +217,9 @@
       <workItem from="1591631569982" duration="3862000" />
       <workItem from="1591885647172" duration="4475000" />
       <workItem from="1592083353546" duration="464000" />
+      <workItem from="1592510337623" duration="611000" />
+      <workItem from="1598813433722" duration="2066000" />
+      <workItem from="1598883763786" duration="3275000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1590592806552</created>
@@ -235,11 +242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590606298531</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="alpha deploy">
+      <created>1592510448115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592510448115</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -256,7 +270,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Added method for integrating with rails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method for integrating with rails" />
+    <MESSAGE value="alpha deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="alpha deploy" />
   </component>
   <component name="WindowStateProjectService">
     <state width="934" height="346" key="GridCell.Tab.0.bottom" timestamp="1590628700714">
@@ -317,9 +332,9 @@
     <state x="303" y="-304" key="run.anything.popup/-2155.-1057.1920.1057/56.23.1384.877/-235.-1057.1920.1057@-235.-1057.1920.1057" timestamp="1591903955688" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo.rcov" NAME="EspressoGeo Coverage Results" MODIFIED="1590595094636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
-    <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo__Client_markets___.rcov" NAME="EspressoGeo::Client markets... Coverage Results" MODIFIED="1590606075890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
     <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo__Client.rcov" NAME=" Coverage Results" MODIFIED="1590608887322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
+    <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo__Client_markets___.rcov" NAME="EspressoGeo::Client markets... Coverage Results" MODIFIED="1590606075890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
     <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo_has_a_version_n___.rcov" NAME="EspressoGeo has a version n... Coverage Results" MODIFIED="1590595103616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
+    <SUITE FILE_PATH="coverage/espresso_geo@EspressoGeo.rcov" NAME="EspressoGeo Coverage Results" MODIFIED="1590595094636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="espresso_geo" />
   </component>
 </project>
