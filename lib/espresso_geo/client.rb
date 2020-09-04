@@ -23,6 +23,7 @@ class EspressoGeo::Client
     @options = {
         headers: { "Geopath-API-Key": @consumer_key}
     }
+    @default_search_opt = { page: 1, page_size: 1000, period_days: 28, measures_range_list: [{type: "imp", min: 0}] }
   end
 
   #self.class.get("/statuses/#{which}_timeline.json", options)
@@ -118,13 +119,13 @@ class EspressoGeo::Client
   # inventory
   # /inventory/search
   def inventory_search(params = {}, opts = { page: 1, page_size: 1000, period_days: 28, measures_range_list: [{type: "imp", min: 0}] })
-    options = { body: params.merge(opts).to_json, headers: @auth2}
+    options = { body: opts.merge(params).to_json, headers: @auth2}
     self.class.post('/inventory/search', options)
   end
 
   # /inventory/search/summary
   def inventory_search_summary(params = {}, opts = { page: 1, page_size: 1000, period_days: 28, measures_range_list: [{type: "imp", min: 0}]  })
-    options = { body: params.merge(opts).to_json, headers: @auth2}
+    options = { body: opts.merge(params), headers: @auth2}
     self.class.post('/inventory/search/summary', options)
   end
 
