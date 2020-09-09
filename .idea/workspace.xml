@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b70b86f5-1581-464f-92ae-a456a1ce1edd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RELEASING.md" beforeDir="false" afterPath="$PROJECT_DIR$/RELEASING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/espresso_geo/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/espresso_geo/client.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +218,8 @@
       <workItem from="1592510337623" duration="611000" />
       <workItem from="1598813433722" duration="2066000" />
       <workItem from="1598883763786" duration="3971000" />
-      <workItem from="1599224675107" duration="1637000" />
+      <workItem from="1599224675107" duration="2550000" />
+      <workItem from="1599526609486" duration="1075000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1590592806552</created>
@@ -262,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598907816000</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixing Options issue">
+      <created>1599226605519</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599226605519</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +294,8 @@
     <MESSAGE value="alpha deploy" />
     <MESSAGE value="Adding default measures for inventory search" />
     <MESSAGE value="Bumping Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bumping Version" />
+    <MESSAGE value="Fixing Options issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing Options issue" />
   </component>
   <component name="WindowStateProjectService">
     <state width="934" height="346" key="GridCell.Tab.0.bottom" timestamp="1590628700714">

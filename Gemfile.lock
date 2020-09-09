@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    espresso_geo (0.2.0)
+    espresso_geo (0.3.0)
       httparty (~> 0.18.0)
 
 GEM
